@@ -1,0 +1,543 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0494c37c20db94e994c1fad78446de, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: 
+  objectsData:
+  - <Name>k__BackingField: SacredTree
+    <ID>k__BackingField: 0
+    <thisBuildingType>k__BackingField: 1
+    description: The center of a Druid grove.  Used for upgrading base and establishing
+      build area
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 4724891842913544915, guid: 49b047340eee33a46affd809dc3707db, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 10, y: 10}
+    <baseExpandWidth>k__BackingField: 2
+    <baseExpandLength>k__BackingField: 2
+    <resourceRequirements>k__BackingField: []
+    <buildDependency>k__BackingField: 
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: ResourceCollector
+    <ID>k__BackingField: 1
+    <thisBuildingType>k__BackingField: 2
+    description: 'Used for depositing collected resources.
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 5008745600779197643, guid: 9b6edec7c89f5524581bd04d1faa6efb, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 5, y: 2}
+    <baseExpandWidth>k__BackingField: 4
+    <baseExpandLength>k__BackingField: 4
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 10
+    <buildDependency>k__BackingField: 01000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: ArcherTower
+    <ID>k__BackingField: 2
+    <thisBuildingType>k__BackingField: 3
+    description: 'Auto attacking tower that shoots arrows at closest enemy targets.
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 7281839211383930054, guid: 0aebab765a5e51b4d95d1f156dba9f36, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 5, y: 6}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 10
+    - resource: 3
+      amount: 10
+    <buildDependency>k__BackingField: 12000000
+    <benefits>k__BackingField:
+    - ID: 2
+      name: Unit Attack & Defense Bonus
+      description: Adds a bonus to all Player Units
+      effects:
+      - effectType: 0
+        effectTarget: 1
+        mod: 5
+        duration: 20
+        objectType: 0
+      - effectType: 2
+        effectTarget: 1
+        mod: 5
+        duration: 30
+        objectType: 0
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: WardingTower
+    <ID>k__BackingField: 3
+    <thisBuildingType>k__BackingField: 4
+    description: 'Auto attacking tower that shoots arrows at closest enemy targets.
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 7986718552851568817, guid: 69b7bb5c018218a4c95c65f8b1bfaf4a, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 5, y: 6}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 15
+    - resource: 3
+      amount: 15
+    <buildDependency>k__BackingField: 0100000004000000
+    <benefits>k__BackingField:
+    - ID: 0
+      name: 
+      description: 
+      effects: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: Wall
+    <ID>k__BackingField: 4
+    <thisBuildingType>k__BackingField: 5
+    description: 'Stone walls for Defending the Grove
+
+
+'
+    <numVariants>k__BackingField: 2
+    <PrefabVariants>k__BackingField:
+    - {fileID: 3982354916545868367, guid: 9e2c1efcf6b04a047ac72d41c505e620, type: 3}
+    - {fileID: 5882415908260861147, guid: 27b377c2769dcbc43930a636a7d59ae3, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 2, y: 1}
+    - {x: 1, y: 2}
+    <baseExpandWidth>k__BackingField: 4
+    <baseExpandLength>k__BackingField: 4
+    <resourceRequirements>k__BackingField:
+    - resource: 3
+      amount: 5
+    <buildDependency>k__BackingField: 15000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: DruidHut
+    <ID>k__BackingField: 5
+    <thisBuildingType>k__BackingField: 7
+    description: 'Druid Hut
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 5276656440818267398, guid: 73bcccb3ed1faac498abc741f2c615dc, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 13, y: 11}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField: []
+    <buildDependency>k__BackingField: 01000000
+    <benefits>k__BackingField:
+    - ID: 1
+      name: Attack Bonus Test
+      description: Adds an attack bonus to all units
+      effects:
+      - effectType: 0
+        effectTarget: 1
+        mod: 6
+        duration: 1000
+        objectType: 0
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: Granary
+    <ID>k__BackingField: 6
+    <thisBuildingType>k__BackingField: 8
+    description: 'Granary
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 4444239661201384646, guid: 7244ddc8b632be647a6adf8f0735d0c7, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 9, y: 14}
+    <baseExpandWidth>k__BackingField: 8
+    <baseExpandLength>k__BackingField: 8
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 15
+    - resource: 3
+      amount: 10
+    <buildDependency>k__BackingField: 0100000017000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: ResourceCollector2
+    <ID>k__BackingField: 7
+    <thisBuildingType>k__BackingField: 9
+    description: 'Raises resource cap and a place for units to deposit gathered resources
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 3537209722931974162, guid: f7aa4ad9721dc90448f62cc9a2253813, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 6, y: 7}
+    <baseExpandWidth>k__BackingField: 4
+    <baseExpandLength>k__BackingField: 4
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 15
+    <buildDependency>k__BackingField: 0100000015000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: RitualSite01
+    <ID>k__BackingField: 8
+    <thisBuildingType>k__BackingField: 10
+    description: 'Ritual Site increases Mana production
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 1973601837360429746, guid: bde5b03139412c44eaf81a387a1e9fe5, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 9, y: 6}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 5
+    - resource: 3
+      amount: 5
+    - resource: 5
+      amount: 2
+    <buildDependency>k__BackingField: 0100000007000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: RitualSite02
+    <ID>k__BackingField: 9
+    <thisBuildingType>k__BackingField: 11
+    description: 'Raises resource cap and a place for units to deposit gathered resources
+
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 4587059308163240510, guid: 2a4d009da69e704469ac40621202d1e4, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 5, y: 3}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 3
+      amount: 5
+    - resource: 2
+      amount: 5
+    - resource: 5
+      amount: 2
+    <buildDependency>k__BackingField: 0100000007000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: RitualSite03
+    <ID>k__BackingField: 10
+    <thisBuildingType>k__BackingField: 12
+    description: 'Raises resource cap and a place for units to deposit gathered resources
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 6597479359689691202, guid: ffb4e939f339ab34ba31c0b5c886fc67, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 6, y: 3}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 3
+      amount: 5
+    - resource: 2
+      amount: 5
+    - resource: 5
+      amount: 2
+    <buildDependency>k__BackingField: 0100000007000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: RitualSite04
+    <ID>k__BackingField: 11
+    <thisBuildingType>k__BackingField: 13
+    description: 'Raises resource cap and a place for units to deposit gathered resources
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 7650448041936488790, guid: c531d4064012da14db46ce29bfd65216, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 8, y: 4}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 3
+      amount: 10
+    - resource: 2
+      amount: 10
+    - resource: 5
+      amount: 3
+    <buildDependency>k__BackingField: 0100000007000000110000000c000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: RitualSite05
+    <ID>k__BackingField: 12
+    <thisBuildingType>k__BackingField: 14
+    description: 'Raises resource cap and a place for units to deposit gathered resources
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 7224360237829415121, guid: 6fc8d2018fa8cce4fa71ebf73375b3ba, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 6, y: 4}
+    <baseExpandWidth>k__BackingField: 6
+    <baseExpandLength>k__BackingField: 6
+    <resourceRequirements>k__BackingField:
+    - resource: 3
+      amount: 10
+    - resource: 2
+      amount: 10
+    - resource: 5
+      amount: 3
+    <buildDependency>k__BackingField: 010000000700000011000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: StoneCircle
+    <ID>k__BackingField: 13
+    <thisBuildingType>k__BackingField: 15
+    description: 'The upgrades all mana attack and defense of all units and structures
+      in the grove
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 4776910743615276446, guid: fb574a5fcce955642ac9740dea125dbd, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 10, y: 10}
+    <baseExpandWidth>k__BackingField: 10
+    <baseExpandLength>k__BackingField: 10
+    <resourceRequirements>k__BackingField:
+    - resource: 3
+      amount: 30
+    - resource: 5
+      amount: 10
+    <buildDependency>k__BackingField: 010000000700000011000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: Roundhouse
+    <ID>k__BackingField: 14
+    <thisBuildingType>k__BackingField: 16
+    description: 'Expands the max amount of units for the grove
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 729133124684548834, guid: a3410d16c50c0f54f81b9b8b800ef46f, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 12, y: 9}
+    <baseExpandWidth>k__BackingField: 12
+    <baseExpandLength>k__BackingField: 12
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 10
+    - resource: 3
+      amount: 10
+    <buildDependency>k__BackingField: 01000000
+    <benefits>k__BackingField:
+    - ID: 3
+      name: Increase Unit Capacity
+      description: Increases the number of units allowed
+      effects:
+      - effectType: 12
+        effectTarget: 0
+        mod: 10
+        duration: 0
+        objectType: 2
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: Sanctuary
+    <ID>k__BackingField: 15
+    <thisBuildingType>k__BackingField: 17
+    description: 'Sanctuary
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 977736960075086839, guid: 2ac48dc5391d76e4bb3d8cee3d4ef00e, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 11, y: 17}
+    <baseExpandWidth>k__BackingField: 8
+    <baseExpandLength>k__BackingField: 8
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 15
+    - resource: 3
+      amount: 15
+    <buildDependency>k__BackingField: 010000000c00000011000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: WeaponForge
+    <ID>k__BackingField: 16
+    <thisBuildingType>k__BackingField: 18
+    description: Allows the constuction of Archer Towers for auto defense
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 3479417185281566479, guid: a2d58656e6721104fa5c882d326a3e4c, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 12, y: 12}
+    <baseExpandWidth>k__BackingField: 8
+    <baseExpandLength>k__BackingField: 8
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 15
+    - resource: 3
+      amount: 15
+    <buildDependency>k__BackingField: 01000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: WheatField
+    <ID>k__BackingField: 17
+    <thisBuildingType>k__BackingField: 19
+    description: 'WheatField
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 429223773931923421, guid: 3cc7d620c57872c4c9c90c93d64fa87c, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 11, y: 11}
+    <baseExpandWidth>k__BackingField: 4
+    <baseExpandLength>k__BackingField: 4
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 5
+    - resource: 4
+      amount: 10
+    <buildDependency>k__BackingField: 0100000008000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: WoodenFence
+    <ID>k__BackingField: 18
+    <thisBuildingType>k__BackingField: 20
+    description: 'WoodenFence
+
+
+'
+    <numVariants>k__BackingField: 4
+    <PrefabVariants>k__BackingField:
+    - {fileID: 3781818272656058630, guid: 1efc46f3ff607bb49ab29ab4691c4a03, type: 3}
+    - {fileID: 3448436133400870345, guid: 10223e75b9c5aa6459b34e51011ec652, type: 3}
+    - {fileID: 2489251286419749357, guid: 48cbd6b5bbec30f44913867616b317e7, type: 3}
+    - {fileID: 701811711859478318, guid: 8b59934ee75fe184f89760a739bbb51e, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 3, y: 1}
+    - {x: 3, y: 1}
+    - {x: 1, y: 3}
+    - {x: 1, y: 3}
+    <baseExpandWidth>k__BackingField: 4
+    <baseExpandLength>k__BackingField: 4
+    <resourceRequirements>k__BackingField:
+    - resource: 2
+      amount: 5
+    <buildDependency>k__BackingField: 01000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 0
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: Druid
+    <ID>k__BackingField: 19
+    <thisBuildingType>k__BackingField: 24
+    description: 'Druid
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 5391467990266212247, guid: d6a3e9cf44d146741823aed588d2a17d, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 1, y: 1}
+    <baseExpandWidth>k__BackingField: 2
+    <baseExpandLength>k__BackingField: 2
+    <resourceRequirements>k__BackingField:
+    - resource: 4
+      amount: 5
+    <buildDependency>k__BackingField: 01000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 1
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1
+  - <Name>k__BackingField: Warrior
+    <ID>k__BackingField: 20
+    <thisBuildingType>k__BackingField: 25
+    description: 'Warrior
+
+
+'
+    <numVariants>k__BackingField: 1
+    <PrefabVariants>k__BackingField:
+    - {fileID: 3706606178769823821, guid: e91c09f2aa1b55545980c05a1a4dd0ec, type: 3}
+    <SizeVariants>k__BackingField:
+    - {x: 1, y: 1}
+    <baseExpandWidth>k__BackingField: 2
+    <baseExpandLength>k__BackingField: 2
+    <resourceRequirements>k__BackingField:
+    - resource: 4
+      amount: 10
+    <buildDependency>k__BackingField: 0100000012000000
+    <benefits>k__BackingField: []
+    <isUnit>k__BackingField: 1
+    <isChainable>k__BackingField: 0
+    <chainSpacing>k__BackingField: 1

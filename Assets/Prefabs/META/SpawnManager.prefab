@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7814250446276448641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1202437068170386961}
+  - component: {fileID: 7729908219087573154}
+  - component: {fileID: 2095773158878442950}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1202437068170386961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814250446276448641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 76, y: 6.412749, z: 81.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7729908219087573154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814250446276448641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c394d9e65d4f36d418bec9728b4943ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  enemyRomans:
+  - {fileID: 8316755473970621947, guid: 5f936d9b2abafd641bc5828ed7d9d9db, type: 3}
+  enemyFae:
+  - {fileID: 8316755473970621947, guid: 5f936d9b2abafd641bc5828ed7d9d9db, type: 3}
+  timeBetweenWave: 1000
+  minEnemies: 1
+  maxEnemies: 5
+  spawnOffset: 10
+  timeUntilNextWave: 0
+  stoneResourceNodes:
+  - {fileID: 6580572945876994276, guid: 04602a577ddd9d1499aa20570e642162, type: 3}
+  - {fileID: 1613786177598433898, guid: 341f6ef06e8cf1a47b196d7709d86d72, type: 3}
+  - {fileID: 5126382675441583837, guid: 5c2d21ab4ce7063489d2f36cd93f1ae2, type: 3}
+  - {fileID: 6713409270876583919, guid: 46375612f35ec314daa40ac648a1a7a3, type: 3}
+  woodResourceNodes:
+  - {fileID: 690007431776968390, guid: 9be5b3aa0c565e14285d5d1636bf5b72, type: 3}
+  - {fileID: 9116989902074760879, guid: 4f74b4aa66b4a09458157182dc2e89f1, type: 3}
+  - {fileID: 5937907298910621349, guid: 56e2251902e24eb4799bf57436cd0b11, type: 3}
+  - {fileID: 8367550653127558633, guid: c94173802a4b51f4b958e78043c7974f, type: 3}
+  - {fileID: 1627489982665772838, guid: 8876bd946e15a1e40ae3d9259f3fd4cc, type: 3}
+  foodResourceNodes:
+  - {fileID: 1688147833265898787, guid: 142a0800f7d70094cb05bea389060940, type: 3}
+  - {fileID: 2958197943540306347, guid: b4baadc483d70a6478996f8d3a8d7b81, type: 3}
+  - {fileID: 8705098081303414249, guid: 698604e7c6d69ce458c7a72f63fef106, type: 3}
+  - {fileID: 8556170279128199506, guid: d8a1aae51593ab143ac5f98694bc0361, type: 3}
+  - {fileID: 5694260925761383133, guid: 97cf947ab735b7f4a817318e3b576922, type: 3}
+  minStone: 5
+  maxStone: 10
+  minWood: 5
+  maxWood: 10
+  minFood: 5
+  maxFood: 10
+  nodeSpawnRadius: 200
+  minDistBetweenNodes: 25
+  nodeSpawnAvoidLayers:
+    serializedVersion: 2
+    m_Bits: 1408
+--- !u!114 &2095773158878442950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814250446276448641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc2cea95c03acd4eb1d33f41553f104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runePrefab: {fileID: 8461348986217604212, guid: 45d3b85bf8e63264f9e079c70f6ea313, type: 3}
+  dropChance: 100
